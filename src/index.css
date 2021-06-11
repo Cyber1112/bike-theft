@@ -1,13 +1,108 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Buttons */
+.btn {
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  width: 100px;
+  color: white;
+  font-size: 1.45em;
+  font-weight: bold;
+  margin: 0 15px;
+  cursor: pointer;
+  background: #1d3557;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(24, 24, 24, 0.507);
+  height: 100px;
+}
+.header-container_logo {
+  margin: auto 20px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.329);
+  transition:  0.5s;
+  cursor: pointer;
+}
+.header-container_logo:hover{
+  transform: scale(1.1);
+  color: rgba(250, 170, 139, 0.2);;
+}
+.header-container_info {
+  margin: auto 20px;
+  width: 30%;
+}
+.header-container_info ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.header-container_info ul li {
+  cursor: pointer;
+}
+.header-container h3 a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.329);
+}
+
+/* Body */
+.container{
+  background-color: rgba(78, 78, 88, 0.226);
+  width: 100%;
+}
+.body-container{
+  background-color: rgba(78, 78, 88, 0.226);
+  height: 700px;
+  position: relative;
+}
+.body-content_container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.body-content_container h3{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.767);
+}
+.btn-mes{
+  margin: 10px;
+  width: 130px;
+}
+
+label {
+  font-size: .7rem;
+}
+
+input.form-control, input.form-control:focus {
+  background: #F0F0FF;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: .6rem;
+}
+
+
+
+
+/* Footer  */
+.footer-container{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(24, 24, 24, 0.507);
+  height: 50px;
+}
+
+.fotter-container_info{
+  margin: auto 0;
 }
